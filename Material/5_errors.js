@@ -37,7 +37,7 @@ let meError = new Error('Пример ошибки');
 */
 //  1. Как произвести проброс ошибки? для этого есть ключевое слово throw
 //  Данное слово позволяет начать процесс пробросить ошибку
-throw meError;
+// throw meError;
 
 //  2. Как обработать ошибку? Обработка ошибок осуществляется с помощью блока
 //  try {} catch() {}. Именно catch занимается обработкой ошибок, как части системных
@@ -95,3 +95,227 @@ try {
 4. Когда необходимо вернуться в место, где можно завершить данную ветку кода
     либо в место, где можно сообщить пользователю о возникшей неполадке
 */
+
+
+/**
+ *  ЗАДАНИЯ
+ */
+
+/*
+    №1. Возникнет ли ошибка в коде, и почему
+*/
+
+// let object = {
+//     undefined: [],
+//     null: null,
+// };
+
+// object.null = object.undefined;
+// object.null.push(object.undefined.push(1));
+// object.null = undefined;
+// object.undefined = object.undefined.concat(object.null);
+// object[undefined].pop();
+
+
+/*
+    №2. У начинающего программиста дома небольшой зверинец: котенок и собака.
+    Они часто ночью мешают ему спать из-за чего продуктивность программиста днем падает.
+    Он решил, что будет отправлять своих питомцев спать после 8 вечера.
+    Для этого он решил написать небольшую функцию, которая поможет ему при укладывании спать животных.
+    Ее цель, подсказать хозяину где должно спать животное. Однако, недосып и усталость сыграли с ним
+    плохую шутку. Он допустил пару ошибок в коде. Помогите ему найти ошибки.
+
+    P.S. Включая логические ошибки (Из реального мира)
+*/
+
+// let kitty = {
+//     name: 'Барсик',
+//     age: 1,
+//     breed: 'Шотландская вислоухая',
+//     sleep: () => {
+//         console.log(`${this.name} пошел спать в ${this.sleepLocation.room} на ${this.sleepLocation.place}`);
+//     },
+//     sleepLocation: {
+//         room: 1,
+//         place: "подушке"
+//     }
+// }
+
+// let dog = {
+//     name: 'Мухтар',
+//     age: 3,
+//     Sleep() {
+//         console.log(`${this.name} пошел спать в своей ${this.sleepLocation}`);
+//     },
+//     sleepLocation: 'будке'
+// }
+
+// function checkSleepTime(arrayOfAlive, time) {
+//     if (time.hour > 20) {
+//         for(let i = 0; i < arrayOfAlive.length; i++) {
+//             arrayOfAlive[i].sleep();
+//         } 
+//     }
+
+// }
+
+// checkSleepTime([kitty, dog], 21);
+
+/*
+    №3. Начальник на работе, выдал вам задание. 
+    Написать функцию, которая считает площадь прямоугольника, его периметр и диагональ.
+
+    Все результаты вернуть в виде объекта:
+    {
+        square: //  площадь
+        perimetr: // периметр
+        diagonal: // диагональ
+    }
+
+    Но дал четкое наставление, что если одно из условий ниже нарушено, то сообщать ошибкой
+    Условия:
+        * Стороны прямоугольника отрицательные
+        * Стороны прямоугольника равны
+        * Диагональ равна одной из сторон треугольника
+        * Площадь равная 0
+        * Периметр прямоугольника нечетный
+        
+*/
+
+function calcRectangle(a,b){
+
+}
+
+/*
+    №4. Открою маленький секрет. Люди не сразу пришли к выводу о том
+    что для программ нужны своего рода стоп краны в виде пользовательских ошибок.
+    (Примичание от автора: на этапе зарождения программирования эта проблема стояла остро,
+        связана она с переходом с Ассемблера на более продвинутые языки. И во время создания/
+        описания операций языка люди прорабатывали различные механизмы взаимодействия с языком.
+        И никто не предполагал, что необходим такой инструмент, так как обычно микроконтроллер(прадед
+        Процессоров) просто перезапускал программу заново. Данный пример далек от доставерности именно механизма
+        Но принцип тот же)
+    Задание. Ниже представлен код стилизованный под работу программы до создания
+    и введения в языки программирования ошибок. Необходимо этот код передалать под механизмы
+    проброса и описания ошибок.
+
+    P.S. смысл кода. Есть два массива чисел. Необходимо вычислить среднее значение в каждом массиве из его элементов.
+    Полученные средние далее в коде будут рассматриваться как высота цилиндра(hArray) и его диаметр(dArray).
+    Из этих величин будет вычислена площадь цилиндра
+*/
+
+function avgOfArray(res = {}, array) {
+    if (!array)
+        return -1;
+
+    if (array.length == 0)
+        return -2;
+
+    if (typeof(res) != 'object') {
+        return -3;
+    }
+
+    let avg = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof(array[i]) != 'number')
+            return -4;
+        avg += array[i];
+    }
+
+    avg /= array.length;
+
+    res.result = avg;
+    return 0;
+}
+
+function calcSquareOfСylinder(res, H, d) {
+    if (typeof(res) != 'object')
+        return -1;
+
+    if (typeof(H) != 'number')
+        return -2;
+    if (Number.isNaN(H) || H < 0)
+        return -3;
+
+    if (typeof(d) != 'number')
+        return -4;
+    if (Number.isNaN(d) || d < 0)
+        return -5;
+
+    let square = Math.PI * H * d;
+    res.result = square;
+    return 0;
+}
+
+let hArray = [6,1,2,6,4,3,7,9,7,8,7,18,7,1];
+let dArray = [21,4,7,0,5,7,5,5,14,8,9,8,0,6];
+
+let resultOfFunction = {};
+let err = avgOfArray(resultOfFunction, hArray);
+if (err) {
+    switch(err) {
+        case -1: 
+            console.log('Переменная hArray неопределена');
+            return;
+        case -2:
+            console.log('hArray пустой');
+            return;
+        case -3:
+            console.log('Невозможно получить результат');
+            return;
+        case -4:
+            console.log('Один из элементов hArray пустой');
+            return;
+        default:
+            console.log('Возникла непредвиденная ошибка');
+            return;
+    }
+}
+
+hArray = resultOfFunction.result;
+err = avgOfArray(resultOfFunction, dArray);
+if (err) {
+    switch(err) {
+        case -1: 
+            console.log('Переменная dArray неопределена');
+            return;
+        case -2:
+            console.log('dArray пустой');
+            return;
+        case -3:
+            console.log('Невозможно получить результат');
+            return;
+        case -4:
+            console.log('один из элементов dArray пустой');
+            return;
+        default:
+            console.log('Возникла непредвиденная ошибка');
+            return;
+    }
+}
+
+dArray = resultOfFunction.result;
+err = calcSquareOfСylinder(resultOfFunction, hArray, dArray);
+if (err) {
+    switch(err) {
+        case -1: 
+            console.log('Невозможно получить результат');
+            return;
+        case -2:
+            console.log('hArray не число');
+            return;
+        case -3:
+            console.log('hArray отрицательное или некорректное число');
+            return;
+        case -4:
+            console.log('dArray не число');
+            return;
+        case -5:
+            console.log('dArray отрицательное или некорректное число');
+            return;
+        default:
+            console.log('Возникла непредвиденная ошибка');
+            return;
+    }
+}
+console.log(resultOfFunction.result);
