@@ -131,6 +131,10 @@ ____
 * [ ] Квадрат ли это? (10_square.js)
 * [ ] Прогулка за 10 минут (11_tenMinutesOfWalk.js)
 * [ ] Сумма интервала чисел(12_sumOfSection.js)
+* [ ] Разница между массивами (13_diffOfArrays.js)
+* [ ] Вращение длинных слов (14_spinWords.js)
+* [ ] Количество гласных (15_numberOfVowels.js)
+* [ ] Найти нарушителя четности (16_findTheParityOutlier.js)
 ... 
 > Список будет пополнятся
 
@@ -144,3 +148,4 @@ ____
 
 1. [Инструкция по сервисам](https://onedrive.live.com/redir?resid=F2E756DD9556D081!123&authkey=!AL0NkK1O4lge_N8&ithint=file%2cdocx&e=i7hRKE)
 2. [Замыкания](https://learn.javascript.ru/closure) Доп материал
+3. [Регулярные выражения и спец. символы](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
