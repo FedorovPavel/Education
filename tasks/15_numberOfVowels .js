@@ -7,11 +7,11 @@
  *      numberOfVowels( "Добрая половина выводов оказалась ошибочной" )=> returns 18
  */
 
- function numberOfVowels(text) {
+function numberOfVowels(text) {
 
- }
+}
 
- //  Тесты
-console.assert(numberOfVowels("Привет мир"), 3);
-console.assert(numberOfVowels("Количество гласных"), 6);
-console.assert(numberOfVowels("Добрая половина выводов оказалась ошибочной"), 18);
+//  Тесты
+console.assert(numberOfVowels("Привет мир") == 3, `должно быть 3, а не ${numberOfVowels("Привет мир")}`);
+console.assert(numberOfVowels("Количество гласных") == 6, `должно быть 6, а не ${numberOfVowels("Количество гласных")}`);
+console.assert(numberOfVowels("Добрая половина выводов оказалась ошибочной") == 18, `должно быть 18, а не ${numberOfVowels("Добрая половина выводов оказалась ошибочной")}`);

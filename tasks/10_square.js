@@ -11,18 +11,16 @@
  */
 //  Реализация
 function isSquare(value) {
-    
+
 }
 
 
 
 
-
-
 //  Тесты
-console.assert(isSquare(-1), false);
-console.assert(isSquare( 0), true);
-console.assert(isSquare( 3), false);
-console.assert(isSquare( 4), true);
-console.assert(isSquare(25), true);
-console.assert(isSquare(26), false);
+console.assert(isSquare(-1) == false, 'должно быть false');
+console.assert(isSquare(0) == true, 'должно быть true');
+console.assert(isSquare(3) == false, 'должно быть false');
+console.assert(isSquare(4) == true, 'должно быть true');
+console.assert(isSquare(25) == true, 'должно быть true');
+console.assert(isSquare(26) == false, 'должно быть false');

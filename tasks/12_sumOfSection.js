@@ -16,12 +16,12 @@ function getSum(a, b) {
 }
 
 //  Тесты
-console.assert(getSum(1, 0), 1)
-console.assert(getSum(1, 2), 3)
-console.assert(getSum(0, 1), 1)
-console.assert(getSum(1, 1), 1)
-console.assert(getSum(-1, 0), -1)
-console.assert(getSum(-1, 2), 2)
+console.assert(getSum(1, 0) == 1, 'должно быть 1');
+console.assert(getSum(1, 2) == 3, 'должно быть 3');
+console.assert(getSum(0, 1) == 1, 'должно быть 1');
+console.assert(getSum(1, 1) == 1, 'должно быть 1');
+console.assert(getSum(-1, 0) == -1, 'должно быть -1');
+console.assert(getSum(-1, 2) == 2, 'должно быть 2');
 
 
 

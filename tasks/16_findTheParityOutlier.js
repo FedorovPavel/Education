@@ -16,11 +16,11 @@ function findOutlier(arr) {
 }
 
 //  Тесты
-console.assert(findOutlier([0, 1, 2]), 1);
-console.assert(findOutlier([1, 2, 3]), 2);
-console.assert(findOutlier([2,6,8,10,3]), 3);
-console.assert(findOutlier([0,0,3,0,0]), 3);
-console.assert(findOutlier([1,1,0,1,1]), 0);
-console.assert(findOutlier([1,1,0,1,1]), 0);
-console.assert(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]), 11);
-console.assert(findOutlier([160, 3, 1719, 19, 11, 13, -21]), 160);
+console.assert(findOutlier([0, 1, 2]) == 1, 'должно быть 1');
+console.assert(findOutlier([1, 2, 3]) == 2, 'должно быть 2');
+console.assert(findOutlier([2, 6, 8, 10, 3]) == 3, 'должно быть 3');
+console.assert(findOutlier([0, 0, 3, 0, 0]) == 3, 'должно быть 3');
+console.assert(findOutlier([1, 1, 0, 1, 1]) == 0, 'должно быть 0');
+console.assert(findOutlier([1, 1, 0, 1, 1]) == 0, 'должно быть 0');
+console.assert(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]) == 11, 'должно быть 11');
+console.assert(findOutlier([160, 3, 1719, 19, 11, 13, -21]) == 160, 'должно быть 160');

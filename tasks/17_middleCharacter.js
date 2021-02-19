@@ -15,7 +15,7 @@ function getMiddle(str) {
 
 }
 
-console.assert(getMiddle("Мир") == "и");
-console.assert(getMiddle("шалаш") == "л");
-console.assert(getMiddle("машина") == "ши");
-console.assert(getMiddle("A") == "A");
+console.assert(getMiddle("Мир") == "и", 'должно быть и');
+console.assert(getMiddle("шалаш") == "л", 'должно быть л');
+console.assert(getMiddle("машина") == "ши", 'должно быть ши');
+console.assert(getMiddle("A") == "A", 'должно быть A');

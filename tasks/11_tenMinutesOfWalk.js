@@ -13,6 +13,6 @@ function isValidWalk(walk) {
 }
 
 //  Тесты
-console.assert(isValidWalk(['n','s','n','s','n','s','n','s','n','s']), true);
-console.assert(!isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']), false);
-console.assert(!isValidWalk(['w']), false);
+console.assert(isValidWalk(['n', 's', 'n', 's', 'n', 's', 'n', 's', 'n', 's']) == true, 'должно быть true');
+console.assert(!isValidWalk(['w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e']) == false, 'должно быть false');
+console.assert(!isValidWalk(['w']) == false, 'должно быть false');

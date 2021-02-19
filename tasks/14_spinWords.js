@@ -9,12 +9,12 @@
  *      spinWords( "This is another test" )=> returns "This is rehtona test"
  */
 
- function spinWords(text) {
+function spinWords(text) {
 
- }
+}
 
 //  Тесты
-console.assert(spinWords("Привет"), "тевирП");
-console.assert(spinWords("Привет товарищи войны"), "тевирП ищиравот ынйов");
-console.assert(spinWords("Это есть тест"), "Это есть тест");
-console.assert(spinWords("Это другой тест"), "Это йогурд тест");
+console.assert(spinWords("Привет") == "тевирП", 'должно быть "тевирП"');
+console.assert(spinWords("Привет товарищи войны") == "тевирП ищиравот ынйов", 'должно быть "тевирП ищиравот ынйов"');
+console.assert(spinWords("Это есть тест") == "Это есть тест", 'должно быть "Это есть тест"');
+console.assert(spinWords("Это другой тест") == "Это йогурд тест", 'должно быть "Это йогурд тест"');
