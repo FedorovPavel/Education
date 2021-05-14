@@ -2,7 +2,8 @@
 Здесь будут публиковаться задания для выполнения
 ____
 ## Текущие задания
-* [ ] Выполнить задание из списка "задач" 20_pluralRepresentationInLetters.js
+* [ ] Выполнить задания "Cоздание пользователей" (26_shortWord.js)
+* [ ] Выполнить задания "Обновление пользователей" (27_updateUser.js)
 * [ ] Выучить методы/операторы mongoDB
 * [ ] Выполнить ДЗ по mongoose
 
@@ -48,16 +49,16 @@ ____
     * [X] Что такое БД, ее виды, зачем нужна
     * [X] Рассмотрение наиболее распространненых БД. Обсуждение выбора БД
     * [ ] Базовые операции 
-        - [ ] insertOne 
-        - [ ] insertMany
-        - [ ] find
-        - [ ] update
-        - [ ] updateMany
-        - [ ] deleteOne
-        - [ ] deleteMany
-    * [ ] ДЗ
+        - [X] insert
+        - [X] insertMany
+        - [X] find
+        - [X] update
+        - [X] updateMany
+        - [X] deleteOne
+        - [X] deleteMany
+    * [X] ДЗ
     * [X] ORM mongoose
-    * [ ] ДЗ по mongoose
+    * [X] ДЗ по mongoose
 
 10. [ ] Сервер
     * [ ] Терминология. Определения "что такое обработчик", "что такое маршрутизатор" и другие 
@@ -139,12 +140,16 @@ ____
 * [X] Центр слова (17_middleCharacter.js)
 * [X] Маска банковской карты и не только (18_cardMask.js)
 * [X] Уникальные символы 2х слов (19_uniqueOfTwoString.js)
-* [ ] Множественное обращение на письме (20_pluralRepresentationInLetters.js)
+* [X] Множественное обращение на письме (20_pluralRepresentationInLetters.js)
 * [X] Изограмма (21_isogram.js)
 * [X] Длина самого короткого слова (22_shortWord.js)
 * [X] Найти количество бит числа (23_bitCounter.js)
 * [X] Cчитаем X и O (24_XO.js)
 * [X] Пинкод карты (25_validatePin.js)
+* [ ] Cоздание пользователей (26_shortWord.js)
+* [ ] Обновление пользователей (27_updateUser.js)
+* [ ] Фильтрация данных пользователей (28_validatorForUserData.js)
+* [ ] Получение данных пользователя (29_getUserData.js)
 ... 
 > Список будет пополнятся
 
